@@ -24,12 +24,12 @@ User stories are most often phrased as: "As a \_**\_(user type)\_\_\_** I need \
 
 PLACES
 
-Field  |	Type  |
-_id	Object | ID   |
-name   |	  String  |
-city   |	 String   |
-state  |	 String   |
-cuisines  |	String    |
-pic	   |     String   |
+| Field  |	Type  |
+| _id	Object | ID   |
+| name   |	  String  |
+| city   |	 String   |
+| state  |	 String   |
+| cuisines  |	String    |
+| pic	   |     String   |
 
 g
