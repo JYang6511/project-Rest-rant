@@ -34,6 +34,3 @@ router.get('/', (req, res) => {
 
 module.exports = router
 
-git add .
-git commit -m "Adding and rendering a new view"
-git push origin main
