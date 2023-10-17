@@ -28,8 +28,6 @@ router.get('/', (req, res) => {
 })
 
 
-
-
 router.post('/', (req, res) => {
   if (!req.body.pic) {
     // Default image if one is not provided
@@ -43,6 +41,21 @@ router.post('/', (req, res) => {
   }
   places.push(req.body)
   res.redirect('/places')
+})
+
+
+router.delete('/:id', (req, res) => {
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+    res.render('error404')
+  }
+  else if (!places[id]) {
+    res.render('error404')
+  }
+  else {
+    places.splice(id, 1)
+    res.redirect('/places')
+  }
 })
 
 
