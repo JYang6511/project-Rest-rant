@@ -44,6 +44,7 @@ router.get('/:id/edit', (req, res) => {
 
 
 
+
 router.post('/', (req, res) => {
   if (!req.body.pic) {
     // Default image if one is not provided
@@ -103,3 +104,5 @@ router.put('/:id', (req, res) => {
 
 
 module.exports = router
+
+
