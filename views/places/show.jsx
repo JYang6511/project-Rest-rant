@@ -58,6 +58,17 @@ function show (data) {
                         </button>
                     </form>
             </div>
+            <form>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required/>
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" required></textarea>
+                <label for="starRating">Star Rating:</label>
+                <input type="number" id="starRating" name="starRating" step="0.5" required />
+                <label for="rant">Rant:</label>
+                <input type="checkbox" id="rant" name="rant"/>
+                <input className="btn btn-primary" type="submit" value="Add Comment" />
+            </form>
           </body>
         </Def>
     )
