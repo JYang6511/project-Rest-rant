@@ -69,16 +69,16 @@ function show (data) {
             <div>
                 <h2>Comments</h2>
                 {comments}
-                    <a href={`/places/${data._id}/edit`} className="btn btn-warning"> 
+                    <a href={`/places/${data.place.id}/edit`} className="btn btn-warning"> 
                         Edit
                     </a> 
-                    <form method="POST" action={`/places/${data._id}?_method=DELETE`}>
+                    <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
                         <button type="submit" className="btn btn-danger">
                             Delete
                         </button>
                     </form>
             </div>
-            <form method="POST" action={`/places/${data.place._id}/comment/?_method=POST`}>
+            <form method="POST" action={`/places/${data.place.id}/comment/?_method=POST`}>
                 <label htmlFor="author">Author:</label>
                 <input type="text" id="author" name="author" required/>
                 <label htmlFor="content">Content:</label>
